@@ -14,9 +14,14 @@ body {
     min-height: 100vh;
 }
 
+header {
+    position: relative;
+}
+
 header nav {
     background-color: #0A3641;
     padding: 10px 0;
+    position: relative;
 }
 
 header nav ul {
@@ -35,6 +40,55 @@ header nav ul li a {
 
 header nav ul li a:hover {
     text-decoration: none;
+}
+
+header .menu-toggle {
+    display: none;
+}
+
+header .menu-toggle-label {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+header #menu-checkbox:checked + nav ul {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    header .menu-toggle {
+        display: block;
+    }
+
+    header .menu-toggle-label {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #0A3641;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+        color: #ffffff;
+    }
 }
 
 .hero-logo {
@@ -180,42 +234,11 @@ footer {
 }
 
 @media (max-width: 768px) {
-    header nav {
-        position: relative;
-    }
-
     header nav ul {
         display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: #0A3641;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 10px;
     }
 
-    header nav ul li {
-        margin: 10px 0;
-    }
-
-    header nav ul li a {
-        font-size: 18px;
-        color: #ffffff;
-    }
-
-    .menu-toggle {
-        display: block;
-        color: #ffffff;
-        font-size: 24px;
-        cursor: pointer;
-        position: absolute;
-        top: 15px;
-        left: 15px;
-    }
-
-    .menu-toggle.active + ul {
+    header #menu-checkbox:checked + ul {
         display: flex;
     }
 
