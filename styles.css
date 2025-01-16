@@ -35,8 +35,8 @@ header nav ul li a:hover {
 }
 
 .menu-toggle-label {
-  display: none; /* Hidden by default */
-  font-size: 36px; /* Bigger hamburger icon */
+  display: none;
+  font-size: 36px;
   color: white;
   cursor: pointer;
   position: absolute;
@@ -46,7 +46,7 @@ header nav ul li a:hover {
 }
 
 .menu-toggle {
-  display: none; 
+  display: none;
 }
 
 #menu-checkbox:checked + nav ul {
@@ -81,7 +81,7 @@ header nav ul li a:hover {
 }
 
 @media (min-width: 1025px) {
-  
+ 
   .menu-toggle-label {
     display: none; 
   }
