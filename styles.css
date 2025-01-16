@@ -34,22 +34,18 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
-.menu-toggle {
-  display: none;
-}
-
 .menu-toggle-label {
-  display: none;
+  display: none; 
   font-size: 24px;
   color: white;
   cursor: pointer;
   position: absolute;
   top: 10px;
   left: 15px;
-}
+  z-index: 10; 
 
-#menu-checkbox {
-  display: none;
+.menu-toggle {
+  display: none; /* Hide the checkbox */
 }
 
 #menu-checkbox:checked + nav ul {
@@ -67,6 +63,20 @@ header nav ul li a:hover {
 #menu-checkbox:checked + nav ul li {
   margin: 10px 0;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle-label {
+    display: block; /* Show hamburger icon */
+  }
+
+  header nav ul {
+    display: none; /* Hide default menu */
+  }
+
+  #menu-checkbox:checked + nav ul {
+    display: flex; /* Show menu when toggled */
+  }
 }
 
 @media (max-width: 768px) {
