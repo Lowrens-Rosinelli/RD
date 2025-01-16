@@ -35,8 +35,8 @@ header nav ul li a:hover {
 }
 
 .menu-toggle-label {
-  display: none; 
-  font-size: 24px;
+  display: none; /* Hidden by default */
+  font-size: 36px; /* Bigger hamburger icon */
   color: white;
   cursor: pointer;
   position: absolute;
@@ -50,7 +50,7 @@ header nav ul li a:hover {
 }
 
 #menu-checkbox:checked + nav ul {
-  display: flex;
+  display: flex; 
   flex-direction: column;
   background-color: #0A3641;
   position: absolute;
@@ -67,9 +67,8 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 1024px) {
-  
   .menu-toggle-label {
-    display: block;
+    display: block; 
   }
 
   header nav ul {
@@ -81,27 +80,14 @@ header nav ul li a:hover {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1025px) {
   
   .menu-toggle-label {
-    font-size: 20px; 
-    top: 15px;
-    left: 10px;
+    display: none; 
   }
-
-  #menu-checkbox:checked + nav ul {
-    padding: 20px 0; 
-  }
-}
 
   header nav ul {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header nav ul li {
-    margin: 10px 0;
+    display: flex; 
   }
 }
 
