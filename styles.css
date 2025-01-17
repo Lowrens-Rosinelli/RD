@@ -38,8 +38,6 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
-
-/* Hero Section */
 .hero-container {
   position: relative;
   width: 100%;
@@ -153,7 +151,6 @@ header nav ul li a:hover {
   color: #ffffff;
 }
 
-
 footer {
   background-color: #B5C3C6;
   padding: 20px 0;
@@ -226,22 +223,22 @@ footer {
 
 @media (max-width: 660px) {
   nav {
-    display: block; /* Ensure navigation is visible */
-    background-color: #0A3641; /* Optional: Background for smaller screens */
+    display: block; 
+    background-color: #0A3641; 
   }
 
   nav ul {
     flex-direction: row; 
-    align-items: center; /* Center menu items */
-    padding: 0; /* Remove default padding */
+    align-items: center; 
+    padding: 0; 
   }
 
   nav ul li {
-    margin: 10px 0; /* Add spacing between menu items */
+    margin: 10px 0; 
   }
 
   nav ul li a {
-    font-size: 18px; /* Slightly larger font for better readability */
+    font-size: 18px; 
   }
   .hero-logo {
     max-width: 190px;
