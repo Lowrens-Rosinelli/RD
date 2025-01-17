@@ -224,9 +224,25 @@ footer {
   background-color: #0A3641;
 }
 
+@media (max-width: 660px) {
+  nav {
+    display: block; /* Ensure navigation is visible */
+    background-color: #0A3641; /* Optional: Background for smaller screens */
+  }
 
-@media (max-width: 600px) {
- 
+  nav ul {
+    flex-direction: row; 
+    align-items: center; /* Center menu items */
+    padding: 0; /* Remove default padding */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Add spacing between menu items */
+  }
+
+  nav ul li a {
+    font-size: 18px; /* Slightly larger font for better readability */
+  }
   .hero-logo {
     max-width: 190px;
   }
@@ -261,16 +277,6 @@ footer {
   .footer-column {
     flex: 1 1 100%;
     margin-bottom: 10px;
-  }
-
- nav, 
- #menu-checkbox:checked {
-    display: none
-    
-  }
-
-  #menu-checkbox:checked ~ nav {
-    display:block
   }
 
   header {
