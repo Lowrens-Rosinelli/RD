@@ -186,9 +186,9 @@ header nav {
     background-color: #0A3641;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     header nav ul {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       gap: 10px;
     }
