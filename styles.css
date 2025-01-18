@@ -4,10 +4,6 @@ body, h1, h2, h3, p, ul, li, a {
   box-sizing: border-box;
 }
 
-#menu-checkbox {
-  display: none
-}
-
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
@@ -37,6 +33,7 @@ header nav ul li a {
 header nav ul li a:hover {
   text-decoration: none;
 }
+
 
 .hero-container {
   position: relative;
@@ -151,6 +148,7 @@ header nav ul li a:hover {
   color: #ffffff;
 }
 
+
 footer {
   background-color: #B5C3C6;
   padding: 20px 0;
@@ -234,11 +232,11 @@ footer {
   }
 
   nav ul li {
-    margin: 10px 0; 
+    margin: 10px 0;
   }
 
   nav ul li a {
-    font-size: 18px; 
+    font-size: 18px;
   }
   .hero-logo {
     max-width: 190px;
@@ -282,10 +280,6 @@ footer {
 
 nav {
   position:absolute
-}
-
-#menu-checkbox {
-  position: fixed;
 }
 
 }
