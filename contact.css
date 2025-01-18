@@ -86,7 +86,6 @@ body, h1, h2, h3, p, ul, li, a {
     text-decoration: underline;
   }
   
-  /* Footer */
   footer {
     background-color: #B5C3C6;
     padding: 20px 0;
@@ -156,9 +155,8 @@ body, h1, h2, h3, p, ul, li, a {
     background-color: #0A3641;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     header nav ul {
-      flex-direction: row;
       align-items: center;
       gap: 10px;
     }
